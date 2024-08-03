@@ -50,7 +50,7 @@ job = 'teacher';
 
 lastName = 'Mechtinger';
 console.log(lastName);
-
+*/
 //math operators
 const  now = 2037;
 const ageGuy = now - 1992;
@@ -83,38 +83,3 @@ console.log(now - 1991 > now -2018);
 
 const averageAge = (ageGuy + ageSarah) / 2;
 console.log(ageGuy,ageSarah, averageAge);
-
-
-const firstName = 'Guy'
-const job = 'teahcer';
-const birthYear = '1991';
-const year = 2037;
-
-const guy = "I'm " + firstName + ',a ' +  (year-birthYear) + ' years old ' + job + '!';
-console.log(guy);
-
-const guyNew = `I'm ${firstName},a ${year-birthYear} years old ${job}!`;
-console.log(guyNew);
-
-console.log(`Just a regular String...`);
-*/
-
-const age = 15;
-
-if(age >= 18){
-console.log('Sarah can start driving license🚗');
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
-}
-
-const birth = 1991;
-let century;
-
-if(birth<=2000) {
-    century = 20;
-}else {
-    century = 21;
-}
-console.log(century);
-
