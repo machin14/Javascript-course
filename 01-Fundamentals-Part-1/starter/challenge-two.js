@@ -16,3 +16,11 @@ if(markBmi>johnBmi){
     console.log("John's BMI is higher than Mark's!");
     console.log(`John's BMI (${johnBmi}) is higher than Mark's (${markBmi})`);
 }
+
+const guyWeight = 77;
+
+if(guyWeight > 80){
+    console.log(`Weight of ${guyWeight} is dangerous. Please start a diet`)
+} else {
+    console.log(`Weight of ${guyWeight} is perfectly fine. Well done!`)
+}
