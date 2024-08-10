@@ -134,7 +134,7 @@ console.log(age1,age2,age3);
 
 const ages = [calcAge1(yearsNew[0]),calcAge1(yearsNew[1]),calcAge1(yearsNew[yearsNew.length-1])];
 console.log(ages);
-*/
+
 
 const friends = ['Michael','Steven','Peter'];
 const newLength = friends.push('Jay');//add an elemet to the end of the array
@@ -161,7 +161,46 @@ if(friends.includes('Steven')){
     console.log('You have a friend called Steven');
 }
 
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmetman',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Micahel', 'Peter', 'Steven']
+};
+*/
 
 
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmetman',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Micahel', 'Peter', 'Steven']
+};
 
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
 
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const InterestedIn = prompt('What do you want to know about jonas? Choose betwen firstName, lastName, age, job and friends');
+
+if(jonas[InterestedIn]){
+    console.log(jonas[InterestedIn]); 
+}
+else{
+    console.log('This value does not exist! Choose betwen firstName, lastName, age, job and friends');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonaschemt';
+console.log(jonas);
+
+//Challenge
+//"Jonas has 3 friends, and his best friend is called Michael"
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
